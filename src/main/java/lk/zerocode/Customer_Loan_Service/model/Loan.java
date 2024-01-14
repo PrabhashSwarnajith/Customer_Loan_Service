@@ -13,4 +13,10 @@ public class Loan {
     private Long loan_ID;
     private Integer amount;
     private String period;
+
+    @ManyToOne
+    private Customer customer;
+
+    @ManyToOne
+    private LoanType loanType;
 }

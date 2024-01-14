@@ -3,6 +3,8 @@ package lk.zerocode.Customer_Loan_Service.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
+
 
 @Entity
 @Data
@@ -14,5 +16,8 @@ public class Customer {
     private String customerName;
     private Integer contact;
     private String address;
+
+    @OneToMany(mappedBy = "loan")
+    private List<Loan> loan;
 
 }
