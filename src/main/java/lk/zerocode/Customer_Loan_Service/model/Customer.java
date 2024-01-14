@@ -13,6 +13,6 @@ public class Customer {
     private Long customer_ID;
     private String customerName;
     private Integer contact;
-    private String
+    private String address;
 
 }
