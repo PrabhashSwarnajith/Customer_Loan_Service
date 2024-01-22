@@ -11,6 +11,7 @@ public class Branch {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long branch_Id;
     private String branchName;
-    private String branchCity;
+    private String location;
+    private String manager_name;
 
 }

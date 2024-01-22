@@ -12,7 +12,8 @@ public class LoanType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String type;
+    private String interest_rate;
+    private String duration;
 
     @OneToMany(mappedBy = "loanType")
     private List<Loan> loan;

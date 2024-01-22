@@ -12,7 +12,7 @@ public class Loan {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long loan_ID;
     private Integer amount;
-    private String period;
+    private String status;
 
     @ManyToOne
     private Customer customer;

@@ -14,7 +14,7 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long customer_ID;
     private String customerName;
-    private Integer contact;
+    private Integer phone;
     private String address;
 
     @OneToMany(mappedBy = "customer")
