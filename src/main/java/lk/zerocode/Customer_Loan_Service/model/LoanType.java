@@ -11,7 +11,7 @@ import java.util.List;
 public class LoanType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long loanType_Id;
     private String interest_rate;
     private String duration;
 
@@ -19,8 +19,8 @@ public class LoanType {
     private List<Loan> loan;
 
     @JoinTable(name = "loanType_Branch" ,
-            joinColumns = {@JoinColumn(name = "loan_Type_Id")},
-            inverseJoinColumns = {@JoinColumn(name = "branch_Id")}
+            joinColumns = {@JoinColumn(name = "loanType_ID")},
+            inverseJoinColumns = {@JoinColumn(name = "branch_ID")}
     )
    @ManyToMany
     private List<Branch> branches;
