@@ -17,7 +17,7 @@ public class Customer {
     private Integer contact;
     private String address;
 
-    @OneToMany(mappedBy = "loan")
+    @OneToMany(mappedBy = "customer")
     private List<Loan> loan;
 
 }

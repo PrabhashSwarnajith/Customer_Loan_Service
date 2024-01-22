@@ -14,10 +14,10 @@ public class LoanType {
     private Long id;
     private String type;
 
-    @OneToMany(mappedBy = "loan")
+    @OneToMany(mappedBy = "loanType")
     private List<Loan> loan;
 
-    @JoinTable(name = "branch" ,
+    @JoinTable(name = "loanType_Branch" ,
             joinColumns = {@JoinColumn(name = "loan_Type_Id")},
             inverseJoinColumns = {@JoinColumn(name = "branch_Id")}
     )
